@@ -1,0 +1,44 @@
+body {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --c1: #202361;
+  --c2: #a8e061;
+
+  --background: var(--black);
+  --accent: var(--white);
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--accent);
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.535);
+  -webkit-border-radius: 9ex;
+}
+/* 
+::-webkit-scrollbar-corner {
+  background: var(--background);
+} */
+
+html {
+  scroll-snap-type: y mandatory;
+}
